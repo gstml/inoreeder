@@ -1,10 +1,3 @@
-body {
-    border-style: none;
-    box-shadow: none;
-    font-family: 'Proxima Nova';
-    background: #F7F7F4;
-}
-
 #below_tree {
     background-color: #383838;
     color: #8a8a8a;
@@ -54,9 +47,9 @@ body {
 #three_way_contents {
     background-color: #F7F7F4;
     padding-bottom: 1em;
-    padding-top: 1em;
     padding-left: 0px;
     padding-right: 0px;
+    padding-top: 1em;
 }
 
 #tree_pane {
@@ -156,6 +149,13 @@ blockquote {
     margin: 0em;
 }
 
+body {
+    background: #F7F7F4;
+    border-style: none;
+    box-shadow: none;
+    font-family: 'Proxima Nova';
+}
+
 button.inno_dialog_buttonbar_button {
     background-color: #ffffff;
     border-radius: 10px;
@@ -250,8 +250,8 @@ div.article_content {
     color: #575757;
     font-family: Amasis eText;
     font-size: 1.25em;
-    padding: 0;
     margin: 0;
+    padding: 0;
     padding-left: 2em;
     padding-right: 2em;
 }
@@ -314,14 +314,24 @@ div.article_footer.article_footer_3way {
     width: 100%;
 }
 
+div.article_footer.article_footer_3way.article_footer_3way {
+    background-color: #e3e2e0;
+    padding-left: 1em;
+    padding-right: 1;
+}
+
 div.article_footer.article_footer_3way.article_footer_3way.article_footer_3way {
+    background-color: #ebe9e4;
     color: #636363;
     font-family: 'Proxima Nova';
-    background-color: #ebe9e4;
     font-weight: bold;
-    padding-right: 2;
-    padding-left: 2em;
     padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2;
+}
+
+div.article_footer.article_footer_3way.article_footer_3way.article_footer_3way div {
+    margin-bottom: -1px;
 }
 
 div.article_footer.article_footer_3way.article_footer_3way.article_footer_3way.article_footer_3way.article_footer_3way.article_footer_3way {
@@ -356,14 +366,17 @@ div.article_stripe {
 div.article_sub_title {
     font-family: 'Proxima Nova';
     margin-top: 15px;
-    padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 2.5em;
     padding-right: 2.5em;
+    padding-top: 1em;
 }
 
 div.article_tags_inner {
     font-family: 'Proxima Nova';
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em;
 }
 
 div.article_title {
@@ -555,14 +568,15 @@ div.parent_div_inner.parent_div_inner_selected {
 }
 
 div.pin_container img {
-    border-radius: 10px;
+    border-radius: 15px;
     margin-bottom: 1em;
-    margin-top: 1em;
-    width: 100%;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 1em;
     padding-left: 0;
     padding-right: 0;
+    width: 100%;
+    display: inline-block;
 }
 
 div.pull_left.articles_feed_group_heading_title.articles_feed_group_heading_title_date {
@@ -584,7 +598,7 @@ div.reader_pane_message {
 }
 
 div.reader_pane_view_style_1 {
-    background-color: #FAF2DF;
+    background-color: #F7F7F4;
 }
 
 div.reader_pane_view_style_2 {
@@ -746,9 +760,16 @@ span.ssssschl {
 
 span.star_img.icon16.icon-star_empty {
     color: #666666;
+    font-weight: bold;
     position: relative;
     top: 3px;
-    font-weight: bold;
+}
+
+span.star_img.icon16.icon-star_empty.star_full {
+    color: #f58c0c;
+    font-size: 12px;
+    position: relative;
+    top: 2px;
 }
 
 span.tree_node.tree_link.normal.tree_issue.tree {
@@ -820,19 +841,18 @@ tr.tr3 td {
     background-color: #474747;
 }
 
-span.star_img.icon16.icon-star_empty.star_full {
-    color: #f58c0c;
-    font-size: 12px;
-    position: relative;
-    top: 2px;
+.article_content img, .gadget_overview_article_content_picture {
+    border-radius: 10px;
+    width: 100%;
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
-div.article_footer.article_footer_3way.article_footer_3way {
-    background-color: #e3e2e0;
-    padding-left: 1em;
-    padding-right: 1;
+span.article_author span[style] {
+    font-style: normal;
 }
 
-div.article_footer.article_footer_3way.article_footer_3way.article_footer_3way div {
-    margin-bottom: -1px;
+div.article_content img {
+    border-radius: 15px;
+    padding: 0;
 }
